@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>GEK_WEB</title>
+    <meta charset="utf-8">
+    <link href="content/shared/styles/examples-offline.css" rel="stylesheet">
+    <link href="styles/kendo.common.min.css" rel="stylesheet">
+    <link href="styles/kendo.rtl.min.css" rel="stylesheet">
+    <link href="styles/kendo.default.min.css" rel="stylesheet">
+    <link href="styles/kendo.default.mobile.min.css" rel="stylesheet">
+    <link href="css/myCss.css" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jszip.min.js"></script>
+    <script src="js/kendo.all.min.js"></script>
+    <script src="content/shared/js/console.js"></script>
+    <script src="MyJs/grid.js"></script>
+    <script type="text/javascript">
+        window.onload = function () {
+            fninit();
+            $("#btn1").click(onBtn1Clicked);
+            $("#btn2").click(onBtn2Clicked);
+        }
+     </script>
+</head>
+
+<body>
+    <header>
+        <h1 id="h1">
+            <span class="logo"></span>
+            <span class="title">GEK Planning System</span>
+            <input type="button" name="btn1" id="btn1" value="测试" />
+            <input type="button" name="btn2" id="btn2" value="自动排单" />
+        </h1>
+    </header>
+    <div style="clear:both;"></div>
+    <div id="divgrid">
+        <div id="div1">
+            <div id="grid1"></div>
+        </div>
+        <div id="div2">
+            <div id="grid2"></div>
+        </div>
+    </div>
+    <div style="clear:both;"></div>
+    <div id="example" class="k1-content">
+        <div id="scheduler"></div>
+    </div>
+
+
+</body>
+</html>
